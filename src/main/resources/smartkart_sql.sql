@@ -1,0 +1,16 @@
+drop database if exists smartkart;
+create database smartkart;
+use smartkart;
+
+create table SK_PRODUCT(
+PRODUCT_ID INT auto_increment,
+NAME varchar(500) NOT NULL,
+DESCRIPTION VARCHAR(1000) NOT NULL,
+CATEGORY VARCHAR(250) NOT NULL,
+BRAND VARCHAR(250) NOT NULL,
+PRICE BIGINT NOT NULL,
+QUANTITY SMALLINT NOT NULL,
+constraint SK_PRODUCT_ID_PK primary key (PRODUCT_ID)
+);
+
+INSERT INTO SK_PRODUCT (PRODUCT_ID, NAME, DESCRIPTION, CATEGORY, BRAND, PRICE,QUANTITY) VALUES (1000,'Ps5','Play Station 5', 'gaming', 'playstation', 25000, 100);
