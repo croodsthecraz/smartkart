@@ -1,0 +1,11 @@
+get : https://localhost:3333/kart/product-api/products
+
+post : http://localhost:3333/kart/customer-signin/SignIn
+
+body :
+
+{
+    "userEmailId" : "MichelBJordan@jordan.com",
+    "userName" : "Micheal B Jordan",
+    "password" : "Micheal@123" 
+}
